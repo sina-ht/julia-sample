@@ -37,8 +37,9 @@ Sample
 - [Calculating Napier Number](napier-simple/napier-simple.jl)
 - [Calculating Euler-Mascheroni Constant](euler-mascheroni-simple/euler-mascheroni-simple.jl)
 - [Calculating Harmonic Series](harmonic/harmonic.jl)
+- [Calculating Bazel Problem Series](bazel/bazel.jl)
 
 
 Metadata
 --------
-- Last Modified: Sat Mar  3 23:23:09 2018.
+- Last Modified: Sat Mar  3 23:51:20 2018.
