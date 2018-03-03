@@ -36,8 +36,9 @@ Sample
 - [Monte Carlo Pi Simple Estimation](montecarlo-pi-simple/montecalro-pi-simple.jl)
 - [Calculating Napier Number](napier-simple/napier-simple.jl)
 - [Calculating Euler-Mascheroni Constant](euler-mascheroni-simple/euler-mascheroni-simple.jl)
+- [Calculating Harmonic Series](harmonic/harmonic.jl)
 
 
 Metadata
 --------
-- Last Modified: Sat Mar  3 22:06:24 2018.
+- Last Modified: Sat Mar  3 23:23:09 2018.
