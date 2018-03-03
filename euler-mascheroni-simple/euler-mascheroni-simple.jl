@@ -4,7 +4,7 @@
 # Calculating Euler-Mascheroni constant
 # Copyright(C) Hiroshi Takekawa
 #
-# WARNING: This algotithm is NOT efficient, just for demonstration. 
+# WARNING: This algotithm is NOT efficient, just for demonstration.
 
 # Max iteration
 Loop = 10000000
