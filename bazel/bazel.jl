@@ -4,7 +4,7 @@
 # Calculating Bazel Series
 # Copyright(C) Hiroshi Takekawa
 #
-# WARNING: This algotithm is NOT efficient, just for demonstration.
+# WARNING: This algorithm is NOT efficient, just for demonstration.
 
 # Iteration count
 Loop = 10000000

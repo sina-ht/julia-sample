@@ -4,7 +4,7 @@
 # Estimating Pi using Monte Carlo method
 # Copyright(C) Hiroshi Takekawa
 #
-# WARNING: This algotithm is NOT efficient, just for demonstration.
+# WARNING: This algorithm is FAR FROM efficient, just for demonstration.
 
 # Iteration count
 Loop = 5000000
