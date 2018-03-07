@@ -35,6 +35,7 @@ Sample
 ------
 - [Monte Carlo Pi Simple Estimation](montecarlo-pi-simple/montecalro-pi-simple.jl)
 - [Calculating Pi by using Arctan(1)](arctan-pi-simple/arctan-pi-simple.jl)
+- [Calculating Pi by using Arctan(1): BigFloat version](arctan-pi-simple-bigfloat/arctan-pi-simple-bigfloat.jl)
 - [Calculating Napier Number](napier-simple/napier-simple.jl)
 - [Calculating Euler-Mascheroni Constant](euler-mascheroni-simple/euler-mascheroni-simple.jl)
 - [Calculating Harmonic Series](harmonic/harmonic.jl)
