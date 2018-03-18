@@ -42,6 +42,7 @@ Sample
 - [Calculating Harmonic Series](harmonic/harmonic.jl)
 - [Calculating Bazel Problem Series](bazel/bazel.jl)
 - [Calculating Bazel Problem Series BigFloat version](bazel-bigfloat/bazel-bigfloat.jl)
+- [Iterator sample](iter/iter.jl)
 
 
 Metadata
