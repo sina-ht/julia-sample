@@ -31,3 +31,10 @@ println(mean(Squares(100)))
 Base.sum(S::Squares) = (n = S.count; return n*(n+1)*(2n+1)÷6)
 println("1^2 + .. + 1803^3")
 println(sum(Squares(1803)))
+
+function Base.getindex(S::Squares, i::Int)
+	1 <= i <= S.count || throw(BoundsError(S, i))
+	return i*i
+end
+println("Squares(100)[23]")
+println(Squares(100)[23]);
