@@ -28,7 +28,7 @@ Introduction
 - [Julia](https://julialang.org/) is a high-level, high-performance dynamic programming language for numerical computing (quoted from the site).
 - This directory contains some examples of the Julia scripts to get a picture of what the Julia language is.
 - Note that these scripts are for demonstation and understanding the Julia language.  I cannot ensure any mathematical correctness or efficiency.
-- These scripts are confirmed on Julia: Version 0.7.0-DEV.4456 Commit 05ff71f187 (2018-03-03 01:29 UTC)
+- These scripts are confirmed on Julia: Version 1.1.0-DEV.42 Commit cd5e5a38c5* (2018-08-17 05:55 UTC)
 
 
 Sample
