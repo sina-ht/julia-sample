@@ -7,9 +7,9 @@
 # WARNING: This algorithm is FAR FROM efficient, just for demonstration.
 
 # Iteration count
-Loop = 5000000
+Loop = 100000000
 
-println("Wait a minute.  Note that this is the Monte Carlo method, so an estimated value will be different at a time.")
+println("Wait a minute.  Note that this is the Monte Carlo method, so an estimated value will be different each time.")
 
 i = 0
 sum = 0
@@ -29,6 +29,6 @@ end
 Pi = sum / Loop * 4
 
 println("Iteration = $Loop")
-println("Estimated Pi            = $Pi")
-PiC = Base.MathConstants.pi
+println("Estimated Pi        = $Pi")
+PiC = BigFloat(Base.MathConstants.pi)
 println("Defined constant Pi = $PiC")

@@ -16,7 +16,7 @@ em = 0
 while i < Loop
 	global sum += 1 / i
 	global em = sum - log(i)
-	# Break if precision is not enough
+	# Break if precision is enough
 	if (i > 5 && em == prev)
 		break
 	end
@@ -27,5 +27,5 @@ end
 println("Iteration = $Loop")
 println("Iterated = $i")
 println("Estimated Euler-Mascheroni constant = $em")
-EulerGamma = Base.MathConstants.eulergamma;
-println("More precise value is           = $EulerGamma")
+print("More precise value is               = ")
+println(BigFloat(Base.MathConstants.eulergamma))

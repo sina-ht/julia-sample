@@ -41,6 +41,6 @@ end
 Pi = (BigFloat(4) * sumx - sumy) * BigFloat(4)
 
 println("Iteration = $Loop")
-println("Estimated Pi            = $Pi")
-PiC = Base.MathConstants.pi
+println("Estimated Pi        = $Pi")
+PiC = BigFloat(Base.MathConstants.pi)
 println("Defined constant Pi = $PiC")

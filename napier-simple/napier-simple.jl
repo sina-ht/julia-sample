@@ -18,6 +18,6 @@ end
 Napier = sum
 
 println("Iteration = $Loop")
-println("Estimated e             = $Napier")
-NapierC = Base.MathConstants.e
+println("Estimated e         = $Napier")
+NapierC = BigFloat(Base.MathConstants.e)
 println("Defined constant is = $NapierC")

@@ -19,5 +19,5 @@ end
 
 println("Estimated Basel Series            = $sum")
 PiC = Base.MathConstants.pi
-Bazel = (PiC ^ 2) / 6
+Bazel = BigFloat((PiC ^ 2) / 6)
 println("Derived from the defined constant = $Bazel")
