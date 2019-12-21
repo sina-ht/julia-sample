@@ -28,7 +28,7 @@ Introduction
 - [Julia](https://julialang.org/) is a high-level, high-performance dynamic programming language for numerical computing (quoted from the site).
 - This directory contains some examples of the Julia scripts to get a picture of what the Julia language is.
 - Note that these scripts are for demonstation and understanding the Julia language.  I cannot ensure any mathematical correctness or efficiency.
-- These scripts are confirmed on Julia: Version 1.4.0-DEV.535 Commit 9babbf5dc6 (2019-11-30 20:29 UTC)
+- These scripts are confirmed on Julia: Version 1.4.0-DEV.648 Commit 608567f856 (2019-12-20 08:29 UTC)
 
 
 Sample
@@ -44,8 +44,9 @@ Sample
 - [Calculating Bazel Problem Series BigFloat version](bazel-bigfloat/bazel-bigfloat.jl)
 - [Iterator sample](iter/iter.jl)
 - [RGB Framebuffer Drawing Sample](drawfb/drawfb.jl)
+- [Drawing a Mandelbrot set](mandelbrot/mandelbrot.jl)
 
 
 Metadata
 --------
-- Last Modified: Mon Dec  9 21:02:03 2019.
+- Last Modified: Sat Dec 21 18:40:35 2019.
