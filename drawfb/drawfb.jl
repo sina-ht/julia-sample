@@ -15,13 +15,15 @@ println("Drawing...")
 width = 256
 height = 256
 
-fb = fill(RGB(0.0, 0.0, 0.0), width, height)
+# The order of height and width is correct.
+fb = fill(RGB(0.0, 0.0, 0.0), height, width)
 
 y = 1
 while y <= height
     global x = 1
     while x <= width
-        fb[x, y] = RGB(rand(), rand(), rand())
+        # The order of x and y is correct.
+        fb[y, x] = RGB(rand(), rand(), rand())
         x = x + 1
     end
     global y = y + 1
