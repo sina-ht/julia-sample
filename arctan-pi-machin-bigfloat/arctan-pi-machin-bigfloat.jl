@@ -9,36 +9,39 @@
 # Iteration count.  This value would be enough.
 Loop = BigInt(100)
 
-# Initial
-x = BigFloat(1/5)
-y = BigFloat(1/239)
+function machin(loop)
+    # Initial
+    x = BigFloat(1/5)
+    y = BigFloat(1/239)
 
-# Terms
-xn = x
-yn = y
+    # Terms
+    xn = x
+    yn = y
 
-# Variables for accumulation
-sumx = BigFloat(0.0)
-sumy = BigFloat(0.0)
+    # Variables for accumulation
+    sumx = BigFloat(0.0)
+    sumy = BigFloat(0.0)
 
-i = 1
-while i < Loop
+    i = 1
+    while i < Loop
 	# Odd terms
-	global sumx += xn/i
-	global sumy += yn/i
-	global i += 2
-	global xn *= x^2
-	global yn *= y^2
+	sumx += xn/i
+	sumy += yn/i
+	i += 2
+	xn *= x^2
+	yn *= y^2
 
 	# Even terms
-	global sumx -= xn/i
-	global sumy -= yn/i
-	global i += 2
-	global xn *= x^2
-	global yn *= y^2
+	sumx -= xn/i
+	sumy -= yn/i
+	i += 2
+	xn *= x^2
+	yn *= y^2
+    end
+    return (BigFloat(4) * sumx - sumy)
 end
 
-Pi = (BigFloat(4) * sumx - sumy) * BigFloat(4)
+Pi = machin(Loop) * BigFloat(4)
 
 println("Iteration = $Loop")
 println("Estimated Pi        = $Pi")

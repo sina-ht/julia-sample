@@ -9,13 +9,17 @@
 # Iteration count
 Loop = 20
 
-i = 0
-sum = 0
-while i < Loop
-	global sum += 1 / factorial(i)
-	global i += 1
+function napier(loop)
+    i = 0
+    sum = 0
+    while i < Loop
+	sum += 1 / factorial(i)
+	i += 1
+    end
+    return sum
 end
-Napier = sum
+
+Napier = napier(Loop)
 
 println("Iteration = $Loop")
 println("Estimated e         = $Napier")

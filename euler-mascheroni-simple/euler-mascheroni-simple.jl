@@ -9,23 +9,27 @@
 # Max iteration
 Loop = 10000000
 
-i = 1
-sum = 0
-prev = 0
-em = 0
-while i < Loop
-	global sum += 1 / i
-	global em = sum - log(i)
+function euler_mascheroni(loop)
+    i = 1
+    sum = 0
+    prev = 0
+    em = 0
+    while i < Loop
+	sum += 1 / i
+	em = sum - log(i)
 	# Break if precision is enough
 	if (i > 5 && em == prev)
-		break
+	    break
 	end
-	global prev = em
-	global i += 1
+	prev = em
+	i += 1
+    end
+    return em
 end
 
+em = euler_mascheroni(Loop)
+
 println("Iteration = $Loop")
-println("Iterated = $i")
 println("Estimated Euler-Mascheroni constant = $em")
 print("More precise value is               = ")
 println(BigFloat(Base.MathConstants.eulergamma))

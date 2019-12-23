@@ -11,20 +11,24 @@ Loop = 100000000
 
 println("Wait a minute.  Note that this is the Monte Carlo method, so an estimated value will be different each time.")
 
-i = 0
-sum = 0
-while i < Loop
+function montecalro_pi(loop)
+    i = 0
+    sum = 0
+    while i < Loop
 	# Generate a random point within the rectangle [0,1) x [0,1)
 	x = rand()
 	y = rand()
 	# Is the generated point inside the unit circle?
 	# This is intended to estimate the area of the unit circle, and in turn estimate the value of Pi.
 	if x^2 + y^2 <= 1
-		global sum += 1
+	    sum += 1
 	end
-	global i += 1
+	i += 1
+    end
+    return sum
 end
 
+sum = montecalro_pi(Loop)
 # sum / Loop is an estimation for Pi/4
 Pi = sum / Loop * 4
 

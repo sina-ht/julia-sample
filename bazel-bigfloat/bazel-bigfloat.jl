@@ -12,12 +12,17 @@ Loop = BigInt(100000000)
 println("Iteration = $Loop")
 println("Please wait...")
 
-i = 1
-sum = BigFloat(0.0)
-while i < Loop
-	global sum += 1 / (i ^ 2)
-	global i += 1
+function bazel(loop)
+    i = 1
+    sum = BigFloat(0.0)
+    while i < Loop
+	sum += 1 / (i ^ 2)
+	i += 1
+    end
+    return sum
 end
+
+sum = bazel(Loop)
 
 println("Estimated Basel Series            = $sum")
 PiC = Base.MathConstants.pi

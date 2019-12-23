@@ -11,16 +11,19 @@
 # Iteration count
 Loop = BigInt(50000000)
 
-i = BigFloat(1.0)
-sum = BigFloat(0.0)
-while i < Loop
-	global sum += 1/i
-	global i += 2
-	global sum -= 1/i
-	global i += 2
+function arctan1(loop)
+    i = BigFloat(1.0)
+    sum = BigFloat(0.0)
+    while i < Loop
+	sum += 1/i
+	i += 2
+	sum -= 1/i
+	i += 2
+    end
+    return sum
 end
 
-Pi = sum * 4
+Pi = arctan1(Loop) * 4
 
 println("Iteration = $Loop")
 println("Estimated Pi        = $Pi")
