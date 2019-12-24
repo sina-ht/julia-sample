@@ -45,8 +45,9 @@ Sample
 - [Iterator sample](iter/iter.jl)
 - [RGB Framebuffer Drawing Sample](drawfb/drawfb.jl)
 - [Drawing a Mandelbrot set](mandelbrot/mandelbrot.jl)
+- [Drawing a Julia set](julia/julia.jl)
 
 
 Metadata
 --------
-- Last Modified: Sat Dec 21 18:40:35 2019.
+- Last Modified: Tue Dec 24 21:15:41 2019.
