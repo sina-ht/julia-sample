@@ -7,12 +7,12 @@
 # WARNING: This algorithm may not be efficient, just for demonstration.
 
 # Iteration count.  This value would be enough.
-Loop = BigInt(100)
+Loop = BigInt(500)
 
 function machin(loop)
-    # Initial
-    x = BigFloat(1/5)
-    y = BigFloat(1/239)
+    # Initial using rational numbers
+    x = 1 // BigInt(5)
+    y = 1 // BigInt(239)
 
     # Terms
     xn = x
@@ -25,18 +25,18 @@ function machin(loop)
     i = 1
     while i < Loop
 	# Odd terms
-	sumx += xn/i
-	sumy += yn/i
+	sumx += xn // i
+	sumy += yn // i
 	i += 2
-	xn *= x^2
-	yn *= y^2
+	xn = xn // BigInt(5 * 5)
+	yn = yn // BigInt(239 * 239)
 
 	# Even terms
-	sumx -= xn/i
-	sumy -= yn/i
+	sumx -= xn // i
+	sumy -= yn // i
 	i += 2
-	xn *= x^2
-	yn *= y^2
+	xn = xn // BigInt(5 * 5)
+	yn = yn // BigInt(239 * 239)
     end
     return (BigFloat(4) * sumx - sumy)
 end
