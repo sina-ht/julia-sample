@@ -6,7 +6,7 @@ License
 - Copyright(C) Hiroshi Takekawa
 - SPDX-License-Identifier: GPL-2.0-only
 - GPLv2 grants the right of _copying, distribution and modification_ of this software.  I hereby explicitly grant the _use_ of this software freely.  The disclaimer is also applied for using.
-- The Japanese copyright law enforces me to have the personal right and I cannot abandon or revoke it.  I hereby explicitly permit to use or modify this software for your own need, unless the modification is beneath my dignity.
+- The moral right of the author has been asserted.  I hereby explicitly permit to use or modify this software for your own need, unless the modification is beneath my dignity and against the license.
 - Scripts under this directory contain SPDX-License-Identifier: tag to simplify licensing (if not, apply GPL-2.0-only), of course these tags are legal bindings, though here I include the boilerplate.  Note that the license is GPLv2 only, no later option.
 ```
 This program is free software; you can redistribute it and/or modify it
@@ -28,7 +28,7 @@ Introduction
 - [Julia](https://julialang.org/) is a high-level, high-performance dynamic programming language for numerical computing (quoted from the site).
 - This directory contains some examples of the Julia scripts to get a picture of what the Julia language is.
 - Note that these scripts are for demonstation and understanding the Julia language.  I cannot ensure any mathematical correctness or efficiency.
-- These scripts are confirmed on Julia: Version 1.4.0-DEV.648 Commit 608567f856 (2019-12-20 08:29 UTC)
+- These scripts are confirmed on Julia: Version 1.5.0-DEV.338 Commit ef0e0f2923 (2020-02-24 22:36 UTC)
 
 
 Sample
@@ -46,8 +46,13 @@ Sample
 - [RGB Framebuffer Drawing Sample](drawfb/drawfb.jl)
 - [Drawing a Mandelbrot set](mandelbrot/mandelbrot.jl)
 - [Drawing a Julia set](julia/julia.jl)
+- [Drawing a Gamma function graph](graph-sample/gamma.jl)
+- [Drawing a Julia set](graph-sample/julia.jl)
+- [Drawing a polynomial graph](graph-sample/poly.jl)
+- [Drawing a sin function](graph-sample/sin.jl)
+- [Drawing a sinusoid function](graph-sample/sinusoid.jl)
 
 
 Metadata
 --------
-- Last Modified: Tue Dec 24 21:15:41 2019.
+- Last Modified: Tue Feb 25 21:10:04 2020.
