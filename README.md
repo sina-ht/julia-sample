@@ -51,6 +51,7 @@ Sample
 - [Drawing a polynomial graph](graph-sample/poly.jl)
 - [Drawing a sin function](graph-sample/sin.jl)
 - [Drawing a sinusoid function](graph-sample/sinusoid.jl)
+- [Drawing a simple 3D function](graph-sample/3d-surface.jl)
 
 
 Metadata
