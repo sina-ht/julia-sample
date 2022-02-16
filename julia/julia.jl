@@ -70,6 +70,15 @@ function julia(w, h, ax, ay, th)
                 g = gamma
                 b = 0.5 + gamma
             end
+            if r > 1
+                r = 1
+            end
+            if g > 1
+                g = 1
+            end
+            if b > 1
+                b = 1
+            end
             fb[Int64(y), Int64(x)] = RGB(r, g, b)
         end
     end
