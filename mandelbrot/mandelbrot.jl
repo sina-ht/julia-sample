@@ -61,6 +61,15 @@ function mandelbrot(w, h, ax, ay, th)
                 g = 0.7 + (loop * 4 / th)
                 b = 0.3 + (loop * 4 / th)
             end
+            if r > 1
+                r = 1
+            end
+            if g > 1
+                g = 1
+            end
+            if b > 1
+                b = 1
+            end
             fb[Int64(y), Int64(x)] = RGB(r, g, b)
         end
     end
