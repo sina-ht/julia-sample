@@ -28,7 +28,7 @@ Introduction
 - [Julia](https://julialang.org/) is a high-level, high-performance dynamic programming language for numerical computing (quoted from the site).
 - This directory contains some examples of the Julia scripts to get a picture of what the Julia language is.
 - Note that these scripts are for demonstation and understanding the Julia language.  I cannot ensure any mathematical correctness or efficiency.
-- These scripts are confirmed on Julia: Version 1.6.2 Commit 1b93d53fc4* (2021-07-14 15:36 UTC)
+- These scripts are confirmed on Julia Version 1.7.3-pre.0 Commit 2ca8b0cf3d* (2022-02-07 18:56 UTC)
 
 
 Sample
@@ -55,8 +55,9 @@ Sample
 - [Drawing a sinusoid function](graph-sample/sinusoid.jl)
 - [Drawing a simple 3D function](graph-sample/3d-surface.jl)
 - [The Rule of 72](graph-sample/TheRuleOf72.jl)
+- [Parse a time series of data, process, and plot](processtimeseries/summary.jl) [See README.md](processtimeseries/README.md)
 
 
 Metadata
 --------
-- Last Modified: Tue Feb 25 21:10:04 2020.
+- Last Modified: Mon Feb 21 23:41:03 2022.
